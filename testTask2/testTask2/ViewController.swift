@@ -53,6 +53,13 @@ class ViewController: UIViewController {
     }
     
     //    MARK: viewWillDisappear()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print(#function)
+        print(self.view.frame.width, self.view.frame.height)
+//        print(someLabel.frame)
+    }
+    
     //    MARK: viewDidDisappear()
     }
 }
