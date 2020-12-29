@@ -31,6 +31,12 @@ class ViewController: UIViewController {
     }
     
     //    MARK: viewWillLayoutSubviews()
+    override func viewWillLayoutSubviews() {
+        print(#function)
+        print(self.view.frame.size.width, self.view.frame.size.height)
+//        print(someLabel.frame)
+    }
+    
     //    MARK: viewDidLayoutSubviews()
     //    MARK: viewDidAppear()
     //    MARK: viewWillDisappear()
