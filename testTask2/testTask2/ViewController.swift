@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(#function)
+        print(self.view.frame.width, self.view.frame.height)
+        print(someLabel.frame)
     }
 
 }
