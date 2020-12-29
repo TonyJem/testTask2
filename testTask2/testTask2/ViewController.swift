@@ -7,41 +7,41 @@ class ViewController: UIViewController {
     //    MARK: viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
+        print("VC", #function)
         view.backgroundColor = .green
     }
     
     //    MARK: viewWillAppear()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(#function)
+        print("VC", #function)
     }
     
     //    MARK: viewWillLayoutSubviews()
     override func viewWillLayoutSubviews() {
-        print(#function)
+        print("VC", #function)
     }
     
     //    MARK: viewDidLayoutSubviews()
     override func viewDidLayoutSubviews() {
-        print(#function)
+        print("VC", #function)
     }
     
     //    MARK: viewDidAppear()
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(#function)
+        print("VC", #function)
     }
     
     //    MARK: viewWillDisappear()
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print(#function)
+        print("VC", #function)
     }
     
     //    MARK: viewDidDisappear()
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print(#function)
+        print("VC", #function)
     }
 }
