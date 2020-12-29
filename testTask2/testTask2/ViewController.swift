@@ -45,6 +45,13 @@ class ViewController: UIViewController {
     }
     
     //    MARK: viewDidAppear()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(#function)
+        print(self.view.frame.width, self.view.frame.height)
+//        print(someLabel.frame)
+    }
+    
     //    MARK: viewWillDisappear()
     //    MARK: viewDidDisappear()
     }
