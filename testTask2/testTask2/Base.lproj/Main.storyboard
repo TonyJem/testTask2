@@ -16,18 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW2-jc-Z9i">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8fB-GF-3jR">
+                                <rect key="frame" x="64" y="408" width="286" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do You Want to move to next Screen?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW2-jc-Z9i">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-2f-X2d">
+                                        <rect key="frame" x="100" y="50.5" width="86" height="30"/>
+                                        <state key="normal" title="Go to Next..."/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pW2-jc-Z9i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uXf-Vv-C9Z"/>
-                            <constraint firstItem="pW2-jc-Z9i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x0j-OR-ziC"/>
+                            <constraint firstItem="8fB-GF-3jR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M1F-Vp-ae6"/>
+                            <constraint firstItem="8fB-GF-3jR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a7W-2L-ELh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -45,8 +54,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ma5-eP-bal">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-Z8-L8a">
+                                <rect key="frame" x="195.5" y="437.5" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vCn-84-QUY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sLO-Z8-L8a" firstAttribute="centerX" secondItem="Ma5-eP-bal" secondAttribute="centerX" id="XVc-NQ-f7b"/>
+                            <constraint firstItem="sLO-Z8-L8a" firstAttribute="centerY" secondItem="Ma5-eP-bal" secondAttribute="centerY" id="pMm-q4-1S8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdi-bF-Yhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
