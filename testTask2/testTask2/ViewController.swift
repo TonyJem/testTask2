@@ -4,13 +4,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var someLabel: UILabel!
     
-    //    MARK: loadView()
-    override func loadView() {
-        print(#function)
-        let view = UIView()
-        self.view = view
-        self.view.backgroundColor = .blue
-    }
+//    //    MARK: loadView()
+//    override func loadView() {
+//        print(#function)
+//        let view = UIView()
+//        self.view = view
+//        self.view.backgroundColor = .blue
+//    }
     
     //    MARK: viewDidLoad()
     override func viewDidLoad() {
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 //        print(someLabel.frame)
     }
     
+/*
     //    MARK: viewWillAppear()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -67,5 +68,6 @@ class ViewController: UIViewController {
         print(self.view.frame.width, self.view.frame.height)
 //        print(someLabel.frame)
     }
+*/
+    
 }
-
