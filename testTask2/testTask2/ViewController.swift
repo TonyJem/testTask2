@@ -17,7 +17,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(#function)
         print(self.view.frame.width, self.view.frame.height)
-        print(someLabel.frame)
+        
+        view.backgroundColor = .green
+//        print(someLabel.frame)
+    }
+    
     //    MARK: viewWillAppear()
     //    MARK: viewWillLayoutSubviews()
     //    MARK: viewDidLayoutSubviews()
