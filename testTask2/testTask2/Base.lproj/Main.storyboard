@@ -28,6 +28,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-2f-X2d">
                                         <rect key="frame" x="100" y="50.5" width="86" height="30"/>
                                         <state key="normal" title="Go to Next..."/>
+                                        <connections>
+                                            <segue destination="ijk-It-Eea" kind="push" id="aXe-KN-TjF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -52,11 +55,11 @@
             <objects>
                 <viewController id="ijk-It-Eea" customClass="SecondViewController" customModule="testTask2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ma5-eP-bal">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-Z8-L8a">
-                                <rect key="frame" x="195.5" y="437.5" width="23" height="21"/>
+                                <rect key="frame" x="195.5" y="410.5" width="23" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,6 +72,7 @@
                             <constraint firstItem="sLO-Z8-L8a" firstAttribute="centerY" secondItem="Ma5-eP-bal" secondAttribute="centerY" id="pMm-q4-1S8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AXW-Kj-Cdw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdi-bF-Yhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
