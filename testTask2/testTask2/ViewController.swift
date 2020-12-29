@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet private weak var someLabel: UILabel!
+    @IBOutlet weak var someLabel: UILabel!
     
     override func loadView() {
         print(#function)
