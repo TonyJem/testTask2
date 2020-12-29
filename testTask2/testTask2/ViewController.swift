@@ -23,6 +23,13 @@ class ViewController: UIViewController {
     }
     
     //    MARK: viewWillAppear()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(#function)
+        print(self.view.frame.width, self.view.frame.height)
+//        print(someLabel.frame)
+    }
+    
     //    MARK: viewWillLayoutSubviews()
     //    MARK: viewDidLayoutSubviews()
     //    MARK: viewDidAppear()
